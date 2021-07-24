@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="app.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">
+          <span>Learn to code by</span> watching others
+        </h1>
+        <p class="header__description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <main class="main">
+        <a href="#" class="btn main__btn">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </a>
+        <section class="form-container">
+          <form action="#" class="form" novalidate>
+            <div class="form__item form__first-container">
+              <label for="first" hidden></label>
+              <input
+                type="text"
+                name="first"
+                placeholder="First Name"
+                class="first"
+                id="first"
+                required
+              />
+              <img
+                src="images/icon-error.svg"
+                alt="!"
+                class="form__icon"
+                id="form__icon--first"
+              />
+              <p class="form__warning hidden" id="form__warning--first">
+                First Name cannot be empty
+              </p>
+            </div>
+            <div class="form__item form__last-container">
+              <label for="last" hidden></label>
+              <input
+                type="text"
+                name="last"
+                placeholder="Last Name"
+                class="last"
+                id="last"
+                required
+              />
+              <img
+                src="images/icon-error.svg"
+                alt="!"
+                class="form__icon"
+                id="form__icon--last"
+              />
+              <p class="form__warning hidden" id="form__warning--last">
+                Last Name cannot be empty
+              </p>
+            </div>
+            <div class="form__item form__email-container">
+              <label for="email" hidden></label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                class="email"
+                id="email"
+                required
+              />
+              <img
+                src="images/icon-error.svg"
+                alt="!"
+                class="form__icon"
+                id="form__icon--email"
+              />
+              <p class="form__warning hidden" id="form__warning--email--1">
+                Looks like this is not an email
+              </p>
+              <p id="form__warning--email--2" class="form__warning hidden">
+                Email cannot be empty
+              </p>
+            </div>
+            <div class="form__item form__password-container">
+              <label for="password" hidden></label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                class="password"
+                id="password"
+                required
+              />
+              <img
+                src="images/icon-error.svg"
+                alt="!"
+                class="form__icon"
+                id="form__icon--password"
+              />
+              <p class="form__warning hidden" id="form__warning--password">
+                Password cannot be empty
+              </p>
+            </div>
+            <button type="submit" class="btn form__btn">
+              Claim your free trial
+            </button>
+            <p class="form__description">
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <!--  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+    <script src="script.js"></script>
+  </body>
+</html>
